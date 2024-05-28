@@ -79,9 +79,12 @@
   * {
     @apply border-border;
   }
+  html {
+    @apply overflow-x-hidden
+  }
   body {
-    font-family: 'Mona', sans-serif;
-    @apply bg-slate-100 text-slate-950 font-medium text-base m-0 p-0 w-screen h-screen;
+    font-family: 'HK', sans-serif;
+    @apply bg-slate-100 text-slate-950 font-medium text-base m-0 p-0 w-screen h-screen relative overflow-x-hidden;
   }
   ::-webkit-scrollbar {
     @apply w-2.5;

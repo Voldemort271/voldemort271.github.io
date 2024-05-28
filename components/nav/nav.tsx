@@ -19,14 +19,29 @@ const links = [
     icon: <User />,
   },
   {
-    link: "/services",
-    text: "Services",
+    link: "/projects",
+    text: "Projects",
     icon: <FileCode2 />,
   },
   {
     link: "/contact",
     text: "Contact",
     icon: <Phone />,
+  },
+];
+
+const projects = [
+  {
+    link: "/projects/1",
+    name: "Link 1",
+  },
+  {
+    link: "/projects/2",
+    name: "Link 2",
+  },
+  {
+    link: "/projects/3",
+    name: "Link 3",
   },
 ];
 
@@ -41,15 +56,19 @@ const Sidenav = () => {
       }
     >
       <div className={"h-[60px] mb-10 w-full flex items-center justify-start"}>
-        <Image
-          alt={"Logo"}
-          src={Pic}
-          width={60}
-          height={60}
+        <div
           className={
-            "aspect-square object-cover rounded-full border-[3px] md:border-4 border-slate-600 md:mr-2.5 select-none"
+            "rounded-full p-1 bg-gradient-to-tl from-pink-500 to-violet-500 md:mr-2.5 "
           }
-        />
+        >
+          <Image
+            alt={"Logo"}
+            src={Pic}
+            width={54}
+            height={54}
+            className={"aspect-square object-cover rounded-full select-none"}
+          />
+        </div>
         <div className={"hidden md:block"}>
           <div className={"font-bold text-lg text-slate-950"}>
             Portfolio Title
@@ -84,9 +103,11 @@ const Sidenav = () => {
         className={"hidden md:flex w-full flex-col gap-2.5 font-semibold pr-5"}
       >
         <div className={"text-[14px]"}>Section title</div>
-        <div className={"text-[12px] text-slate-600"}>Link 1</div>
-        <div className={"text-[12px] text-slate-600"}>Link 2</div>
-        <div className={"text-[12px] text-slate-600"}>Link 3</div>
+        {projects.map((project) => (
+          <Link href={project.link} key={project.link}>
+            <div className={"text-[12px] text-slate-600"}>{project.name}</div>
+          </Link>
+        ))}
       </div>
       <div
         className={
