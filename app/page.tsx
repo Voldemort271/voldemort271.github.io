@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/project-card/project-card";
+import Pic from "@/public/pic.jpg";
 
 export default function Home() {
   return (
-    <>
+    <div className={"layout-animate"}>
       <div className={"w-full md:max-w-screen-sm m-10 ml-0"}>
         <div className={"font-bold text-5xl text-slate-950"}>
           Hi, this is{" "}
@@ -45,10 +46,16 @@ export default function Home() {
           "mb-5 w-full hidden sm:flex gap-5 flex-wrap flex-col md:flex-row"
         }
       >
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard image={Pic} link={"/projects/1"} title={"Project #1"}>
+          Sample description.
+        </ProjectCard>
+        <ProjectCard image={Pic} link={"/projects/2"} title={"Project #2"}>
+          Sample description.
+        </ProjectCard>
+        <ProjectCard image={Pic} link={"/projects/3"} title={"Project #3"}>
+          Sample description.
+        </ProjectCard>
       </div>
-    </>
+    </div>
   );
 }

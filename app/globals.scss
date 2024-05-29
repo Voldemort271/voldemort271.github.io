@@ -97,6 +97,20 @@
   }
   ::-webkit-scrollbar-thumb:hover {
     @apply bg-slate-400;
+  }
 
+  .layout-animate {
+    animation: fade-in-bottom 300ms ease-out;
+  }
+
+  @keyframes fade-in-bottom {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }

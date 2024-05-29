@@ -24,7 +24,7 @@ export default function RootLayout({
         </div>
         <div
           className={
-            "col-start-2 col-end-3 sm:mx-10 flex flex-col justify-center"
+            "col-start-2 col-end-3 sm:mx-10 mr-5 my-28 flex flex-col justify-center"
           }
         >
           {children}

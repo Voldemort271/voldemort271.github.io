@@ -70,11 +70,9 @@ const Sidenav = () => {
           />
         </div>
         <div className={"hidden md:block"}>
-          <div className={"font-bold text-lg text-slate-950"}>
-            Portfolio Title
-          </div>
+          <div className={"font-bold text-lg text-slate-950"}>Voldemort</div>
           <div className={"font-semibold text-xs text-slate-600 mt-[-5px]"}>
-            Buy Premium
+            Portfolio v2.0
           </div>
         </div>
       </div>
@@ -114,7 +112,7 @@ const Sidenav = () => {
           "hidden md:block absolute bottom-5 font-semibold text-xs text-slate-600"
         }
       >
-        Copyright &copy; Voldemort <br /> 2024 - 2029.
+        Copyright &copy; &lt;3 <br /> 2024 - 2029.
       </div>
     </div>
   );
