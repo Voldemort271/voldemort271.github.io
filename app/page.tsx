@@ -1,8 +1,15 @@
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/project-card/project-card";
+import { supabase } from "@/lib/supabase";
 import Pic from "@/public/pic.jpg";
+import React from "react";
 
-export default function Home() {
+export const fetchCache = "force-no-store";
+
+const Home = async () => {
+  let { data } = await supabase.from("project").select().limit(3);
+  let featured = data;
+
   return (
     <div className={"layout-animate"}>
       <div className={"w-full md:max-w-screen-sm m-10 ml-0"}>
@@ -46,16 +53,21 @@ export default function Home() {
           "mb-5 w-full hidden sm:flex gap-5 flex-wrap flex-col md:flex-row"
         }
       >
-        <ProjectCard image={Pic} link={"/projects/1"} title={"Project #1"}>
-          Sample description.
-        </ProjectCard>
-        <ProjectCard image={Pic} link={"/projects/2"} title={"Project #2"}>
-          Sample description.
-        </ProjectCard>
-        <ProjectCard image={Pic} link={"/projects/3"} title={"Project #3"}>
-          Sample description.
-        </ProjectCard>
+        {featured
+          ? featured.map((project) => (
+              <ProjectCard
+                image={Pic}
+                link={project.link}
+                title={project.name}
+                key={project.id}
+              >
+                {project.small_desc}
+              </ProjectCard>
+            ))
+          : ""}
       </div>
     </div>
   );
-}
+};
+
+export default Home;
