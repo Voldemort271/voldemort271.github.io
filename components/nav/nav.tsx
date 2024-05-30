@@ -100,7 +100,7 @@ const Sidenav = () => {
       <div
         className={"hidden md:flex w-full flex-col gap-2.5 font-semibold pr-5"}
       >
-        <div className={"text-[14px]"}>Section title</div>
+        <div className={"text-[14px]"}>Featured Projects</div>
         {projects.map((project) => (
           <Link href={project.link} key={project.link}>
             <div className={"text-[12px] text-slate-600"}>{project.name}</div>

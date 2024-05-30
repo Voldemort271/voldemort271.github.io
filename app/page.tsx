@@ -57,7 +57,7 @@ const Home = async () => {
           ? featured.map((project) => (
               <ProjectCard
                 image={Pic}
-                link={project.link}
+                link={"/projects/" + project.id}
                 title={project.name}
                 key={project.id}
               >

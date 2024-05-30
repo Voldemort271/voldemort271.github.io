@@ -26,7 +26,7 @@ const ProjectCard = ({ title, children, link, image }: Props) => {
     >
       <Image alt={title} src={image || Pic} className={"w-full rounded-sm"} />
       <CardHeader className={"px-0 pt-5 pb-2.5"}>
-        <Link href={link || "/"} target={"_blank"}>
+        <Link href={link || "/"}>
           <CardTitle className={"text-lg font-bold leading-4"}>
             {title}
           </CardTitle>
