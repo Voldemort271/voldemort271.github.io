@@ -6,7 +6,7 @@ import Pic from "@/public/pic.jpg";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { month } from "@/lib/utils";
-
+import { ArrowLeft } from "lucide-react";
 export const fetchCache = "force-no-store";
 
 const ProjectDetails = async ({ params }: { params: { id: string } }) => {
@@ -17,7 +17,12 @@ const ProjectDetails = async ({ params }: { params: { id: string } }) => {
     .single();
 
   return (
-    <div className={"layout-animate"}>
+    <div className={"relative layout-animate"}>
+      <div className={"hidden sm:block absolute top-0 right-10"}>
+        <Link href={"/projects"}>
+          <ArrowLeft />
+        </Link>
+      </div>
       <div className={"w-full md:max-w-screen-md my-10 mt-5"}>
         <div className={"font-bold text-5xl text-slate-950"}>
           {data ? data.name : "Future Project"}
@@ -46,7 +51,7 @@ const ProjectDetails = async ({ params }: { params: { id: string } }) => {
                 "text-base font-semibold shadow-lg shadow-slate-950/[0.2] w-fit"
               }
             >
-              Visit
+              {data ? "Visit" : "Go back"}
             </Button>
           </Link>
         </div>

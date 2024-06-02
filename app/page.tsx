@@ -3,6 +3,7 @@ import ProjectCard from "@/components/project-card/project-card";
 import { supabase } from "@/lib/supabase";
 import Pic from "@/public/pic.jpg";
 import React from "react";
+import Link from "next/link";
 
 export const fetchCache = "force-no-store";
 
@@ -29,23 +30,28 @@ const Home = async () => {
             "my-2.5 hidden sm:block font-semibold text-base leading-5 text-slate-600"
           }
         >
-          and this is a short description of me. I hope you like it because I
-          spent a lot of effort on this, and it’s rude to hate it yk.
+          and I&apos;m an aspiring web developer studying in one of the best
+          institutions of the country. I have been making websites since I was
+          12, and this is my portfolio site.
         </div>
         <div className={"my-2.5 sm:my-0 flex flex-row gap-5"}>
-          <Button
-            className={
-              "text-base font-semibold shadow-lg shadow-slate-950/[0.2] w-fit"
-            }
-          >
-            Hire me
-          </Button>
-          <Button
-            className={"text-base font-medium bg-slate-100 border-2 w-fit"}
-            variant={"outline"}
-          >
-            Contact
-          </Button>
+          <Link href={"/hire"}>
+            <Button
+              className={
+                "text-base font-semibold shadow-lg shadow-slate-950/[0.2] w-fit"
+              }
+            >
+              Hire me
+            </Button>
+          </Link>
+          <Link href={"/contact"}>
+            <Button
+              className={"text-base font-medium bg-slate-100 border-2 w-fit"}
+              variant={"outline"}
+            >
+              Contact
+            </Button>
+          </Link>
         </div>
       </div>
       <div

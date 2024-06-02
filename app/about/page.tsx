@@ -20,9 +20,8 @@ const AboutPage = () => {
             "my-2.5 hidden sm:block font-semibold text-base leading-5 text-slate-600"
           }
         >
-          A big paragraph about me that you all can read or ignore, I do not
-          care that much tbh. But yeah, I am an aspiring web developer and
-          occasionally make cool stuff. Check out my projects! :)
+          I am a 18yo freshman studying in one of the best institutions of the
+          country.
         </div>
       </div>
       <div
@@ -38,12 +37,15 @@ const AboutPage = () => {
           }
         ></Image>
         <div className={"text-base"}>
-          A big paragraph about me that you all can read or ignore, I do not
-          care that much tbh. But yeah, I am an aspiring web developer and
-          occasionally make cool stuff. Check out my projects! :) A big
-          paragraph about me that you all can read or ignore, I do not care that
-          much tbh. But yeah, I am an aspiring web developer and occasionally
-          make cool stuff. Check out my projects! :)
+          I have a ~7 year experience in programming — my dad introduced me to
+          Khan Academy when I was 10. I started out in the processing.js
+          environment there, and gradually shifted to web development because I
+          found that more appealing and useful. Life has been really hectic
+          since then, but we all have to power through it anyway, don&apos;t we.
+          I haven&apos;t been getting much free time because of the intensive
+          course in the college, but I&apos;m trying to learn new things every
+          time. On top of that, I&apos;m also a basketball and badminton player
+          and I also play the electronic keyboard.
         </div>
       </div>
       <div className={"mt-20 flex-wrap flex gap-5"}>
@@ -93,36 +95,34 @@ const AboutPage = () => {
         <div
           className={"my-2.5 font-semibold text-base leading-5 text-slate-600"}
         >
-          This is a small paragraph about my skills, however few I have. As
-          usual, you can choose to read or ignore, I will not force you. But do
-          you see the beautiful links on the bottom right? They are so cute,
-          aren’t they? Wanna click one and find out what will happen? While you
-          think about it, let me present you with some facts about me.
+          I have been trying to get better at all these, but the life of a
+          stressed-out adult can only afford this much free time. I&apos;m
+          confident that I&apos;ll continue to learn more skills and expand on
+          my range. While you think about considering me for your project, let
+          me treat you with some cool facts.
         </div>
       </div>
       <div className={"my-20 w-full max-w-screen-sm"}>
         <div className={"w-full my-10"}>
           <div className={"font-bold text-2xl"}>Fact #1</div>
           <div className={"font-semibold text-base leading-5 text-slate-600"}>
-            I was once a dinosaur. A big piece of whale poop hit the earth and
-            it kinda got blank - moments later I’m a kid crying in the lap of a
-            lady dressed in white.
+            I have been making casual webpages on Khan Academy since I was 12,
+            but learnt of the popular frameworks and libraries like React only
+            when I&apos;d turned 15.
           </div>
         </div>
         <div className={"w-full my-10"}>
           <div className={"font-bold text-2xl"}>Fact #2</div>
           <div className={"font-semibold text-base leading-5 text-slate-600"}>
-            I was once a dinosaur. A big piece of whale poop hit the earth and
-            it kinda got blank - moments later I’m a kid crying in the lap of a
-            lady dressed in white.
+            My Khan Academy webpages receive very positive feedback, winning a
+            couple of official contests too, and that in turn motivated me to
+            delve deeper into the web dev world. I&apos;d say it paid off.
           </div>
         </div>
         <div className={"w-full my-10"}>
           <div className={"font-bold text-2xl"}>Fact #3</div>
           <div className={"font-semibold text-base leading-5 text-slate-600"}>
-            I was once a dinosaur. A big piece of whale poop hit the earth and
-            it kinda got blank - moments later I’m a kid crying in the lap of a
-            lady dressed in white.
+            Australia is wider than the Moon.
           </div>
         </div>
       </div>

@@ -33,15 +33,15 @@ const links = [
 const projects = [
   {
     link: "/projects/1",
-    name: "Link 1",
+    name: "CloudCo v2",
   },
   {
     link: "/projects/2",
-    name: "Link 2",
+    name: "Enlightenment Bibliotheca",
   },
   {
     link: "/projects/3",
-    name: "Link 3",
+    name: "Music Club, IIT Mandi",
   },
 ];
 
