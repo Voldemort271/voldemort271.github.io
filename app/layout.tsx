@@ -7,6 +7,7 @@ import LinkedInLink from "@/components/socials/linkedin";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://voldemort-rust.vercel.app/"),
   title: "Voldemort - Portfolio",
   description: "Amateur web dev and passionate UI/UX designer.",
   openGraph: {
