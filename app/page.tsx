@@ -1,14 +1,14 @@
 import { Button } from "@/components/ui/button";
 import ProjectCard from "@/components/project-card/project-card";
 import { supabase } from "@/lib/supabase";
-import Pic from "@/public/pic.jpg";
+import Pic from "@/public/test.jpg";
 import React from "react";
 import Link from "next/link";
 
 export const fetchCache = "force-no-store";
 
 const Home = async () => {
-  let { data } = await supabase.from("project").select().limit(3);
+  let { data } = await supabase.from("projects").select().limit(3);
   let featured = data;
 
   return (
@@ -62,7 +62,7 @@ const Home = async () => {
         {featured
           ? featured.map((project) => (
               <ProjectCard
-                image={Pic}
+                image={`/images/${project.id}.png`}
                 link={"/projects/" + project.id}
                 title={project.name}
                 key={project.id}

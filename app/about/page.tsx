@@ -1,6 +1,12 @@
 import React from "react";
 import Image from "next/image";
-import Pic from "@/public/pic.jpg";
+import Test from "@/public/test.jpg";
+import Pic from "@/public/images/pic.png";
+import Pic1 from "@/public/images/htmcss.png";
+import Pic2 from "@/public/images/next.png";
+import Pic3 from "@/public/images/node.png";
+import Pic4 from "@/public/images/cpp.png";
+import Pic5 from "@/public/images/py.png";
 
 const AboutPage = () => {
   return (
@@ -31,7 +37,7 @@ const AboutPage = () => {
       >
         <Image
           alt={"Hello"}
-          src={Pic}
+          src={Test}
           className={
             "aspect-square object-cover w-[250px] rounded-md shadow-xl shadow-slate-950/[0.2]"
           }
@@ -51,7 +57,7 @@ const AboutPage = () => {
       <div className={"mt-20 flex-wrap flex gap-5"}>
         <Image
           alt={"Lol"}
-          src={Pic}
+          src={Pic1}
           className={
             "w-16 aspect-square object-cover rounded-sm shadow-xl" +
             " shadow-slate-950/[0.2]"
@@ -59,7 +65,7 @@ const AboutPage = () => {
         ></Image>
         <Image
           alt={"Lol"}
-          src={Pic}
+          src={Pic2}
           className={
             "w-16 aspect-square object-cover rounded-sm shadow-xl" +
             " shadow-slate-950/[0.2]"
@@ -67,7 +73,7 @@ const AboutPage = () => {
         ></Image>
         <Image
           alt={"Lol"}
-          src={Pic}
+          src={Pic3}
           className={
             "w-16 aspect-square object-cover rounded-sm shadow-xl" +
             " shadow-slate-950/[0.2]"
@@ -75,7 +81,7 @@ const AboutPage = () => {
         ></Image>
         <Image
           alt={"Lol"}
-          src={Pic}
+          src={Pic4}
           className={
             "w-16 aspect-square object-cover rounded-sm shadow-xl" +
             " shadow-slate-950/[0.2]"
@@ -83,7 +89,7 @@ const AboutPage = () => {
         ></Image>
         <Image
           alt={"Lol"}
-          src={Pic}
+          src={Pic5}
           className={
             "w-16 aspect-square object-cover rounded-sm shadow-xl" +
             " shadow-slate-950/[0.2]"

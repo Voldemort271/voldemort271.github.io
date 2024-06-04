@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import Image from "next/image";
-import Pic from "@/public/pic.jpg";
+import Pic from "@/public/test.jpg";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Link from "next/link";
 
@@ -14,7 +14,7 @@ interface Props {
   title: string;
   children: ReactNode;
   link?: string;
-  image?: StaticImport;
+  image?: string | StaticImport;
 }
 
 const ProjectCard = ({ title, children, link, image }: Props) => {
@@ -24,7 +24,13 @@ const ProjectCard = ({ title, children, link, image }: Props) => {
         "w-full lg:w-[calc(33.33%-30px)] lg:max-w-[300px] bg-slate-100 p-2.5"
       }
     >
-      <Image alt={title} src={image || Pic} className={"w-full rounded-sm"} />
+      <Image
+        alt={title}
+        src={image || Pic}
+        width={1000}
+        height={600}
+        className={"w-full rounded-sm border-4"}
+      />
       <CardHeader className={"px-0 pt-5 pb-2.5"}>
         <Link href={link || "/"}>
           <CardTitle className={"text-lg font-bold leading-4"}>

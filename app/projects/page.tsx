@@ -1,12 +1,12 @@
 import React from "react";
 import { supabase } from "@/lib/supabase";
 import ProjectCard from "@/components/project-card/project-card";
-import Pic from "@/public/pic.jpg";
+import Pic from "@/public/test.jpg";
 
 export const fetchCache = "force-no-store";
 
 const Projects = async () => {
-  let { data } = await supabase.from("project").select().limit(9);
+  let { data } = await supabase.from("projects").select().limit(9);
   let allProjects = data;
 
   return (
@@ -38,7 +38,7 @@ const Projects = async () => {
         {allProjects
           ? allProjects.map((project) => (
               <ProjectCard
-                image={Pic}
+                image={`/images/${project.id}.png`}
                 link={"/projects/" + project.id}
                 title={project.name}
                 key={project.id}

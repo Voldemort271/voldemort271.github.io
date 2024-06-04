@@ -2,7 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import Pic from "@/public/pic.jpg";
+import Test from "@/public/test.jpg";
+import Pfp from "@/public/images/pfp.png";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FileCode2, Home, Phone, User } from "lucide-react";
@@ -63,7 +64,7 @@ const Sidenav = () => {
         >
           <Image
             alt={"Logo"}
-            src={Pic}
+            src={Test}
             width={54}
             height={54}
             className={"aspect-square object-cover rounded-full select-none"}

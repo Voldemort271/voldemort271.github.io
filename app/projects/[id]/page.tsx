@@ -2,7 +2,7 @@ import React from "react";
 import { supabase } from "@/lib/supabase";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Pic from "@/public/pic.jpg";
+import Pic from "@/public/test.jpg";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { month } from "@/lib/utils";
@@ -11,7 +11,7 @@ export const fetchCache = "force-no-store";
 
 const ProjectDetails = async ({ params }: { params: { id: string } }) => {
   let { data } = await supabase
-    .from("project")
+    .from("projects")
     .select()
     .eq("id", params.id)
     .single();
@@ -62,8 +62,10 @@ const ProjectDetails = async ({ params }: { params: { id: string } }) => {
         }
       >
         <Image
-          alt={"Hello"}
-          src={Pic}
+          alt={data ? data.name : "Future Project"}
+          src={data ? `/images/${data.id}.png` : Pic}
+          width={900}
+          height={600}
           className={
             "aspect-square object-cover w-[250px] rounded-md shadow-xl shadow-slate-950/[0.2]"
           }
