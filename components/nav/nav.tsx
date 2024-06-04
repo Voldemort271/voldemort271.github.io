@@ -52,7 +52,7 @@ const Sidenav = () => {
   return (
     <div
       className={
-        "w-[60px] md:w-[260px] pr-5 md:p-5 h-[calc(100vh-40px)] m-5 flex flex-col fixed z-50 border-r-2" +
+        "w-[60px] md:w-[260px] pr-5 md:p-5 h-[calc(100dvh-40px)] m-5 flex flex-col fixed z-50 border-r-2" +
         " border-r-slate-600/[0.3]"
       }
     >
