@@ -7,8 +7,11 @@ import LinkedInLink from "@/components/socials/linkedin";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
-  title: "Portfolio site",
-  description: "Because im cool",
+  title: "Voldemort - Portfolio",
+  description: "Amateur web dev and passionate UI/UX designer.",
+  openGraph: {
+    images: "/opengraph-image.png",
+  },
 };
 
 export default function RootLayout({
