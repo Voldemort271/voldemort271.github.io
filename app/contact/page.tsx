@@ -32,22 +32,22 @@ const Contacts = () => {
         <Alert className={"bg-slate-100"}>
           <Phone className="h-4 w-4" />
           <AlertTitle>Phone</AlertTitle>
-          <AlertDescription>0987654321</AlertDescription>
+          <AlertDescription>(fake)</AlertDescription>
         </Alert>
         <Alert className={"bg-slate-100"}>
           <Mail className="h-4 w-4" />
           <AlertTitle>Email</AlertTitle>
-          <AlertDescription>a@b.c</AlertDescription>
+          <AlertDescription>(fake)</AlertDescription>
         </Alert>
         <Alert className={"bg-slate-100"}>
           <Gamepad className="h-4 w-4" />
           <AlertTitle>Discord</AlertTitle>
-          <AlertDescription>@ur_mom</AlertDescription>
+          <AlertDescription>@shubum2712</AlertDescription>
         </Alert>
         <Alert className={"bg-slate-100"}>
           <Instagram className="h-4 w-4" />
           <AlertTitle>Instagram</AlertTitle>
-          <AlertDescription>@bla</AlertDescription>
+          <AlertDescription>@shubum_27</AlertDescription>
         </Alert>
       </div>
     </div>

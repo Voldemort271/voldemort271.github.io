@@ -4,7 +4,6 @@ import Sidenav from "@/components/nav/nav";
 import React from "react";
 import EmailLink from "@/components/socials/email";
 import LinkedInLink from "@/components/socials/linkedin";
-import CallLink from "@/components/socials/phone";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
@@ -38,7 +37,6 @@ export default function RootLayout({
         >
           <EmailLink />
           <LinkedInLink />
-          <CallLink />
         </div>
       </body>
     </html>

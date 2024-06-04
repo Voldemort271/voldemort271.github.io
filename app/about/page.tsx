@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Test from "@/public/test.jpg";
 import Pic from "@/public/images/pic.png";
-import Pic1 from "@/public/images/htmcss.png";
+import Pic1 from "@/public/images/tailwind.png";
 import Pic2 from "@/public/images/next.png";
 import Pic3 from "@/public/images/node.png";
 import Pic4 from "@/public/images/cpp.png";
@@ -54,46 +54,31 @@ const AboutPage = () => {
           and I also play the electronic keyboard.
         </div>
       </div>
-      <div className={"mt-20 flex-wrap flex gap-5"}>
+      <div className={"mt-20 flex-wrap items-center flex gap-5"}>
         <Image
           alt={"Lol"}
           src={Pic1}
-          className={
-            "w-16 aspect-square object-cover rounded-sm shadow-xl" +
-            " shadow-slate-950/[0.2]"
-          }
+          className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
           alt={"Lol"}
           src={Pic2}
-          className={
-            "w-16 aspect-square object-cover rounded-sm shadow-xl" +
-            " shadow-slate-950/[0.2]"
-          }
+          className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
           alt={"Lol"}
           src={Pic3}
-          className={
-            "w-16 aspect-square object-cover rounded-sm shadow-xl" +
-            " shadow-slate-950/[0.2]"
-          }
+          className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
           alt={"Lol"}
           src={Pic4}
-          className={
-            "w-16 aspect-square object-cover rounded-sm shadow-xl" +
-            " shadow-slate-950/[0.2]"
-          }
+          className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
           alt={"Lol"}
           src={Pic5}
-          className={
-            "w-16 aspect-square object-cover rounded-sm shadow-xl" +
-            " shadow-slate-950/[0.2]"
-          }
+          className={"w-16 aspect-square object-contain"}
         ></Image>
       </div>
       <div className={"w-full md:max-w-screen-md mr-10 mt-5"}>
