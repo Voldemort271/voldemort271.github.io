@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Test from "@/public/test.jpg";
-import Pic from "@/public/images/pic.png";
 import Pic1 from "@/public/images/tailwind.png";
 import Pic2 from "@/public/images/next.png";
 import Pic3 from "@/public/images/node.png";

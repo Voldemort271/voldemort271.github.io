@@ -1,7 +1,6 @@
 import React from "react";
 import { supabase } from "@/lib/supabase";
 import ProjectCard from "@/components/project-card/project-card";
-import Pic from "@/public/test.jpg";
 
 export const fetchCache = "force-no-store";
 
@@ -30,11 +29,7 @@ const Projects = async () => {
           of my humbleness, but because I simply don’t have enough to show.
         </div>
       </div>
-      <div
-        className={
-          "mb-5 w-full hidden sm:flex gap-5 flex-wrap flex-col md:flex-row"
-        }
-      >
+      <div className={"mb-5 w-full flex gap-5 flex-wrap flex-col md:flex-row"}>
         {allProjects
           ? allProjects.map((project) => (
               <ProjectCard
