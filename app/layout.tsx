@@ -5,6 +5,7 @@ import React from "react";
 import EmailLink from "@/components/socials/email";
 import LinkedInLink from "@/components/socials/linkedin";
 import CallLink from "@/components/socials/phone";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Portfolio site",
@@ -28,6 +29,7 @@ export default function RootLayout({
           }
         >
           {children}
+          <SpeedInsights />
         </div>
         <div
           className={
