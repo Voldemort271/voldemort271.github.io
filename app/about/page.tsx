@@ -3,9 +3,10 @@ import Image from "next/image";
 import Test from "@/public/test.jpg";
 import Pic1 from "@/public/images/tailwind.png";
 import Pic2 from "@/public/images/next.png";
-import Pic3 from "@/public/images/node.png";
-import Pic4 from "@/public/images/cpp.png";
-import Pic5 from "@/public/images/py.png";
+import Pic3 from "@/public/images/express.png";
+import Pic4 from "@/public/images/node.png";
+import Pic5 from "@/public/images/cpp.png";
+import Pic6 from "@/public/images/py.png";
 
 const AboutPage = () => {
   return (
@@ -55,28 +56,33 @@ const AboutPage = () => {
       </div>
       <div className={"mt-20 flex-wrap items-center flex gap-5"}>
         <Image
-          alt={"Lol"}
+          alt={"Tailwind CSS"}
           src={Pic1}
           className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
-          alt={"Lol"}
+          alt={"Next.js"}
           src={Pic2}
           className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
-          alt={"Lol"}
+          alt={"Express.js"}
           src={Pic3}
           className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
-          alt={"Lol"}
+          alt={"Node.js"}
           src={Pic4}
           className={"w-16 aspect-square object-contain"}
         ></Image>
         <Image
-          alt={"Lol"}
+          alt={"C++"}
           src={Pic5}
+          className={"w-16 aspect-square object-contain"}
+        ></Image>
+        <Image
+          alt={"Python"}
+          src={Pic6}
           className={"w-16 aspect-square object-contain"}
         ></Image>
       </div>
